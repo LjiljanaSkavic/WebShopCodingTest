@@ -2,9 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Web shop</title>
+    <title>Web shop app</title>
+    <link rel="stylesheet" href="src/css/styles.css">
 </head>
-<body>
 
+<body>
+<header class="header">
+    <div class="product-logo-wrapper">
+        <img src="src/images/icons/product-logo.png" alt="product-logo">
+    </div>
+    <nav>
+        <ul class="tabs">
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#science">Science</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+        </ul>
+    </nav>
+    <div class="icons">
+        <img src="src/images/icons/search.png" alt="search-icon">
+        <img src="src/images/icons/user.png" alt="user-icon">
+        <img src="src/images/icons/bag.png" alt="bag-icon">
+    </div>
+</header>
+
+<section class="product-section">
+    <div class="product-image-wrapper">
+        <img src="src/images/product-image.png" alt="search-icon">
+    </div>
+    <div class="product-details-wrapper">
+        <nav>
+            <div class="tabs">
+                <a href="#all-products">All products</a>
+                <span>&#47;</span>
+                <a href="#haircare">Haircare</a>
+                <span>&#47;</span>
+                <a href="#restorative-hair-mask">Restorative hair mask</a>
+            </div>
+        </nav>
+        <h2>Restorative hair mask</h2>
+        <p>nuturishment in a bottle</p>
+
+        <hr>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolores
+            magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
+        <div class="organic-elements-wrapper">
+            <div class="organic-element">
+                <img src="src/images/icons/organic.png" alt="organic-icon">
+                <span>100&#37; organic</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="radio-button-wrapper">
+            <input type="radio" id="buy-once" name="purchase-type" value="buy-once" checked="checked">
+            <label for="buy-once">Buy Once &#124; &#36;38</label>
+        </div>
+        <div class="radio-button-wrapper">
+            <input type="radio" id="subscribe" name="purchase-type" value="subscribe">
+            <label for="subscribe">Subscribe (SAVE 20&#37;) &#124; &#36;30</label>
+        </div>
+
+        <div class="counter-and-button-wrapper">
+            <div class="counter-element">
+                <button class="counter-minus">&minus;</button>
+                <span class="display-counter">1</span>
+                <button class="counter-plus">&plus;</button>
+            </div>
+
+            <button>Add to card</button>
+        </div>
+    </div>
+</section>
+
+<div class="ingredients-elements-wrapper">
+    <div class="ingredient-element">
+        <header class="ingredient-header">
+            <h3>Ingredients</h3>
+            <button class="ingredients-header-button">&minus;</button>
+        </header>
+        <p class="ingredient-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+            magna
+            aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
+    </div>
+</div>
+
+<script src="src/js/product-quantity-counter.js"></script>
+<script src="src/js/ingredient-repeat.js"></script>
+<script src="src/js/organic-repeat.js"></script>
 </body>
 </html>
