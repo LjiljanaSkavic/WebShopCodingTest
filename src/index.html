@@ -41,29 +41,29 @@
                 <a href="#restorative-hair-mask">Restorative hair mask</a>
             </div>
         </nav>
-        <h2>Restorative hair mask</h2>
-        <p>nuturishment in a bottle</p>
+        <span class="product-title">Restorative hair mask</span>
+        <span class="product-description">nuturishment in a bottle</span>
 
-        <hr>
+        <hr class="line">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolores
             magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
         <div class="organic-elements-wrapper">
             <div class="organic-element">
-                <img src="./images/icons/organic.png" alt="organic-icon">
-                <span>100&#37; organic</span>
+                <img class="organic-icon" src="./images/icons/organic.png" alt="organic-icon">
+                <span class="organic-text">100&#37; organic</span>
             </div>
         </div>
-        <hr>
+        <hr class="line">
 
         <div class="radio-button-wrapper">
             <input type="radio" id="buy-once" name="purchase-type" value="buy-once" checked="checked">
-            <label for="buy-once">Buy Once &#124; &#36;38</label>
+            <label class="text font-16" for="buy-once">Buy Once &#124; &#36;38</label>
         </div>
         <div class="radio-button-wrapper">
             <input type="radio" id="subscribe" name="purchase-type" value="subscribe">
-            <label for="subscribe">Subscribe (SAVE 20&#37;) &#124; &#36;30</label>
+            <label class="text font-16" for="subscribe">Subscribe (SAVE 20&#37;) &#124; &#36;30</label>
         </div>
 
         <div class="counter-and-button-wrapper">
@@ -72,8 +72,7 @@
                 <span class="display-counter">1</span>
                 <button class="counter-plus">&plus;</button>
             </div>
-
-            <button>Add to card</button>
+            <button class="add-product-button">Add to card</button>
         </div>
     </div>
 </section>
@@ -81,15 +80,24 @@
 <div class="ingredients-elements-wrapper">
     <div class="ingredient-element">
         <header class="ingredient-header">
-            <h3>Ingredients</h3>
+            <span>Ingredients</span>
             <button class="ingredients-header-button">&minus;</button>
         </header>
-        <p class="ingredient-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore
             magna
             aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
     </div>
 </div>
+
+<!--<section>-->
+<!--    <h3>You may also like</h3>-->
+<!--    <main id="carousel"></main>-->
+<!--    <iframe src="suggested-product.html"></iframe>-->
+<!--    <iframe src="suggested-product.html"></iframe>-->
+<!--    <iframe src="suggested-product.html"></iframe>-->
+<!--    <iframe src="suggested-product.html"></iframe>-->
+<!--</section>-->
 
 <script src="./js/product-quantity-counter.js"></script>
 <script src="./js/ingredient-repeat.js"></script>

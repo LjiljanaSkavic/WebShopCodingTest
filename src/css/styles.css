@@ -1,3 +1,7 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -6,9 +10,9 @@
 .tabs {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 16px;
+    /*margin-bottom: 64px;*/
 }
 
 .icons {
@@ -27,18 +31,51 @@ li {
 
 .product-section {
     display: flex;
-    flex-direction: row;
+    /*flex-wrap: wrap; */
+}
+
+.product-image-wrapper img {
+    object-fit: contain;
+    width: 60vw;
 }
 
 .product-details-wrapper {
-    padding: 16px;
+    padding: 16px 32px;
     display: flex;
     flex-direction: column;
+    width: 40vw;
+    gap: 24px;
+    background-color: #F6F6F5;
+}
+
+.organic-elements-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 16px;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*gap: 16px;*/
+    /*justify-content: center;*/
+    /*margin: 32px 0;*/
 }
 
 .organic-wrapper {
     display: flex;
     flex-direction: row;
+}
+.organic-element{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    color: #948282;
+    font-size: 14px;
+}
+
+.organic-icon {
+    max-width: 48px;
+    max-height: 48px;
 }
 
 .image-wrapper {
@@ -51,6 +88,42 @@ li {
 .counter-and-button-wrapper {
     display: flex;
     justify-content: space-between;
+    height: 48px;
+    gap: 16px;
+}
+
+.counter-element{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/*Change classes, don't repeat code*/
+.counter-minus {
+    border: none;
+    background-color: transparent;
+}
+
+.counter-plus{
+    border: none;
+    background-color: transparent;
+}
+
+.add-product-button{
+    min-width: 238px;
+    max-width: 271px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #4D4D4D;
+    background-color: #BFABAB;
+    border: none;
+}
+
+.ingredients-elements-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
 }
 
 .ingredient-header {
@@ -69,4 +142,71 @@ li {
 
 button {
     cursor: pointer;
+}
+
+iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+.text {
+    color: #4D4D4D;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.product-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: normal;
+    color: #4D4D4D;
+    /*margin-bottom: 16px ;*/
+}
+
+.product-description {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #4D4D4D;
+    /*margin-bottom: 24px;*/
+}
+
+.product-text{
+    margin-top: 24px;
+    color: #4D4D4D;
+}
+
+.line {
+    color: #9F938B;
+    width: 100%;
+}
+
+/*Mobile*/
+@media (max-width: 600px) {
+    .product-section {
+        flex-wrap: wrap;
+    }
+
+    .product-image-wrapper img{
+        width: 100vw;
+    }
+
+    .product-details-wrapper{
+        width: 100vw;
+    }
+
+    .ingredients-elements-wrapper{
+        width: 100vw;
+    }
+
+    .ingredient-element{
+        width: 100vw;
+    }
+
+    .ingredient-header {
+        width: 100%;
+    }
 }
