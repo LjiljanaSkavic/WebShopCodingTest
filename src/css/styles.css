@@ -42,7 +42,7 @@ li {
     display: flex;
     flex-direction: column;
     width: 40vw;
-    gap: 24px;
+    gap: 16px;
     background-color: #F6F6F5;
 }
 
@@ -129,6 +129,11 @@ li {
     max-height: 32px;
 }
 
+.ingredient-title {
+    font-size: 20px;
+    color: #4D4D4D;
+}
+
 .hide-element {
     display: none;
 }
@@ -167,6 +172,7 @@ iframe {
 
 .product-text {
     color: #4D4D4D;
+    margin: 0;
 }
 
 .line {
