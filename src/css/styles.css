@@ -2,9 +2,31 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #4D4D4D
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.kebab-menu-img{
+    max-width: 28px;
+    max-height: 28px;
 }
 
 .tabs {
@@ -14,18 +36,14 @@ body {
     gap: 16px;
 }
 
+.mobile-tabs {
+    display: none;
+}
+
 .icons {
     display: flex;
     align-items: center;
     gap: 8px;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style-type: none;
 }
 
 .product-section {
@@ -76,6 +94,7 @@ li {
     justify-content: space-between;
     height: 48px;
     gap: 16px;
+    margin-top: 24px;
 }
 
 .counter-element{
@@ -177,22 +196,6 @@ li {
     display: none;
 }
 
-button {
-    cursor: pointer;
-}
-
-.text {
-    color: #4D4D4D;
-}
-
-.slide-text{
-    font-weight: 400;
-}
-
-.font-16{
-    font-size: 16px;
-}
-
 .product-title {
     text-transform: uppercase;
     font-size: 28px;
@@ -217,8 +220,29 @@ button {
     width: 100%;
 }
 
+.text {
+    color: #4D4D4D;
+}
+
+.slide-text{
+    font-weight: 400;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
 /*Mobile*/
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+
+    .header{
+        display: none;
+    }
+
+    .tabs{
+        display: none;
+    }
+
     .product-section {
         flex-wrap: wrap;
     }
@@ -245,5 +269,23 @@ button {
 
     .carousel-arrow {
         display: none;
+    }
+
+    .counter-and-button-wrapper{
+        margin-top: 0;
+    }
+
+    .header-mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-tabs{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        background-color: #F6F6F5;
+        height: 32px;
     }
 }
