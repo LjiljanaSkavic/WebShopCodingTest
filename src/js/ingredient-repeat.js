@@ -1,9 +1,7 @@
-let isExpanded = true;
-let ingredientHeaderButton = document.querySelector('.ingredients-header-button');
-let ingredientText = document.querySelector('.ingredient-content');
+let ingredientsWrapper = document.querySelector('.ingredients-elements-wrapper');
+let ingredientElement = document.querySelector('.ingredient-element');
 
-ingredientHeaderButton.addEventListener('click', () => {
-  isExpanded = !isExpanded;
-  ingredientHeaderButton.innerHTML = isExpanded ? '-' : '+';
-  isExpanded ? ingredientText.classList.remove('hide-element') : ingredientText.classList.add('hide-element');
-});
+for (let x = 0; x < 2; x++) {
+  let clone = ingredientElement.cloneNode(true);
+  ingredientsWrapper.append(clone);
+}

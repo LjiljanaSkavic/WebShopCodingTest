@@ -68,11 +68,11 @@
 
         <div class="counter-and-button-wrapper">
             <div class="counter-element">
-                <button class="counter-minus">&minus;</button>
+                <button class="counter-minus button-transparent">&minus;</button>
                 <span class="display-counter">1</span>
-                <button class="counter-plus">&plus;</button>
+                <button class="counter-plus button-transparent">&plus;</button>
             </div>
-            <button class="add-product-button">Add to card</button>
+            <button id="add-to-cart" class="add-to-cart-button">Add to cart</button>
         </div>
     </div>
 </section>
@@ -81,9 +81,9 @@
     <div class="ingredient-element">
         <header class="ingredient-header">
             <p class="ingredient-title">Ingredients</p>
-            <button class="ingredients-header-button">&minus;</button>
+            <button class="ingredients-header-button button-transparent">&minus;</button>
         </header>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <p class="ingredient-content text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore
             magna
             aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
@@ -106,7 +106,7 @@
 <section>
     <p class="carousel-title">You may also like</p>
     <div class="carousel-wrapper">
-        <button id="carousel-prev">&lt;</button>
+        <img id="carousel-prev" class="carousel-arrow" src="./images/icons/arrow-back.png" alt="arrow-back">
         <div id="carousel">
             <div class="suggested-product-wrapper">
                 <img src="./images/suggested-product-image.png" alt="suggested-product">
@@ -143,7 +143,7 @@
                 <p class="slide-text">159,00 KR</p>
             </div>
         </div>
-        <button id="carousel-next">&gt;</button>
+        <img id="carousel-next" class="carousel-arrow" src="./images/icons/arrow-next.png" alt="arrow-next">
     </div>
 </section>
 
@@ -151,5 +151,6 @@
 <script src="./js/ingredient-repeat.js"></script>
 <script src="./js/organic-repeat.js"></script>
 <script src="./js/carousel.js"></script>
+<script src="./js/button-effect.js"></script>
 </body>
 </html>
