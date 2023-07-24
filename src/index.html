@@ -77,7 +77,7 @@
     </div>
 </section>
 
-<div class="ingredients-elements-wrapper">
+<section class="ingredients-elements-wrapper">
     <div class="ingredient-element">
         <header class="ingredient-header">
             <p class="ingredient-title">Ingredients</p>
@@ -89,19 +89,67 @@
             aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
         <hr class="line">
     </div>
-</div>
+</section>
 
-<!--<section>-->
+<!--<section class="carousel-wrapper">-->
 <!--    <h3>You may also like</h3>-->
-<!--    <main id="carousel"></main>-->
-<!--    <iframe src="suggested-product.html"></iframe>-->
-<!--    <iframe src="suggested-product.html"></iframe>-->
-<!--    <iframe src="suggested-product.html"></iframe>-->
-<!--    <iframe src="suggested-product.html"></iframe>-->
+<!--    <button class="prev">Prev</button>-->
+<!--    <div id="slider">-->
+<!--        <iframe class="slide" src="suggested-product.html"></iframe>-->
+<!--        <iframe class="slide" src="suggested-product.html"></iframe>-->
+<!--        <iframe class="slide" src="suggested-product.html"></iframe>-->
+<!--        <iframe class="slide" src="suggested-product.html"></iframe>-->
+<!--    </div>-->
+<!--    <button class="next">Next</button>-->
 <!--</section>-->
+
+<section>
+    <p class="carousel-title">You may also like</p>
+    <div class="carousel-wrapper">
+        <button id="carousel-prev">&lt;</button>
+        <div id="carousel">
+            <div class="suggested-product-wrapper">
+                <img src="./images/suggested-product-image.png" alt="suggested-product">
+                <p class="slide-text">HAND POMADE / POMMADE MAINS</p>
+                <p class="text">NOURISHMENT FOR YOUR HANDS</p>
+                <p class="slide-text">159,00 KR</p>
+            </div>
+
+            <div class="suggested-product-wrapper">
+                <img src="./images/suggested-product-image.png" alt="suggested-product">
+                <p class="slide-text">HAND POMADE / POMMADE MAINS</p>
+                <p class="text">NOURISHMENT FOR YOUR HANDS</p>
+                <p class="slide-text">159,00 KR</p>
+            </div>
+
+            <div class="suggested-product-wrapper">
+                <img src="./images/suggested-product-image.png" alt="suggested-product">
+                <p class="slide-text">HAND POMADE / POMMADE MAINS</p>
+                <p class="text">NOURISHMENT FOR YOUR HANDS</p>
+                <p class="slide-text">159,00 KR</p>
+            </div>
+
+            <div class="suggested-product-wrapper">
+                <img src="./images/suggested-product-image.png" alt="suggested-product">
+                <p class="slide-text">HAND POMADE / POMMADE MAINS</p>
+                <p class="text">NOURISHMENT FOR YOUR HANDS</p>
+                <p class="slide-text">159,00 KR</p>
+            </div>
+
+            <div class="suggested-product-wrapper">
+                <img src="./images/suggested-product-image.png" alt="suggested-product">
+                <p class="slide-text">HAND POMADE / POMMADE MAINS</p>
+                <p class="text">NOURISHMENT FOR YOUR HANDS</p>
+                <p class="slide-text">159,00 KR</p>
+            </div>
+        </div>
+        <button id="carousel-next">&gt;</button>
+    </div>
+</section>
 
 <script src="./js/product-quantity-counter.js"></script>
 <script src="./js/ingredient-repeat.js"></script>
 <script src="./js/organic-repeat.js"></script>
+<script src="./js/carousel.js"></script>
 </body>
 </html>
